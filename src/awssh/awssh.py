@@ -20,7 +20,6 @@ Options:
   -h --help                     Show this message.
 """
 
-
 # Standard Python Libraries
 import logging
 import os
