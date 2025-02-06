@@ -161,10 +161,9 @@ repos:
         # the dev section of setup.py to avoid discrepancies in type
         # checking between environments.
         additional_dependencies:
-          - boto3-stubs
           - pytest-mypy
+          - types-boto3
           - types-docopt
-          - types-requests
           - types-setuptools
         args:
           - --scripts-are-modules

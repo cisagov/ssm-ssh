@@ -103,19 +103,17 @@ setup(
         # field of the mypy pre-commit hook to avoid discrepancies in type
         # checking between environments.
         "dev": [
+            "pytest-mypy",
+            "types-boto3",
             "types-docopt",
             "types-setuptools",
         ],
         "test": [
-            "boto3-stubs",
             "coverage",
             "coveralls",
             "pre-commit",
             "pytest-cov",
             "pytest",
-            "types-docopt",
-            "types-requests",
-            "types-setuptools",
         ],
     },
     # Conveniently allows one to run the CLI tool as `awssh`
