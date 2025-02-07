@@ -35,7 +35,7 @@ else
       sed "s/$old_version_regex/$new_version/" $FLAKE_FILE > $tmp_flake
       mv $tmp_flake $FLAKE_FILE
       # Run flake update to update the flake.lock file
-      nix flake update
+      nix --extra-experimental-features nix-command --extra-experimental-features flakes flake update
       git add $FLAKE_FILE $FLAKE_LOCK_FILE $VERSION_FILE
       git commit -m"Bump version from $old_version to $new_version"
       git push
